@@ -1,0 +1,16 @@
+// Required Input:
+//   name: object
+// You can reference the input variables using input.NAME
+
+exports.step = function(input) {
+
+  var to_return = input.object;
+  
+  //check if the property field is an empty string or null
+  if(to_return['property'] == '' || to_return['property'] == null){
+    //if empty string or null, set this property to a new value
+    to_return['property'] = 'new value';
+  }
+  
+  return to_return;
+};
